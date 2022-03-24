@@ -12,7 +12,7 @@ import About from './components/About.js';
 
 function App() {;
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/hansori">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
