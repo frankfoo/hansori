@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hansori/static/css/main.3271fa1e.css",
+    "main.js": "/hansori/static/js/main.a1e322e7.js",
+    "static/js/787.fe563e21.chunk.js": "/hansori/static/js/787.fe563e21.chunk.js",
+    "static/media/logo.svg": "/hansori/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/hansori/index.html",
+    "main.3271fa1e.css.map": "/hansori/static/css/main.3271fa1e.css.map",
+    "main.a1e322e7.js.map": "/hansori/static/js/main.a1e322e7.js.map",
+    "787.fe563e21.chunk.js.map": "/hansori/static/js/787.fe563e21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3271fa1e.css",
+    "static/js/main.a1e322e7.js"
+  ]
+}
