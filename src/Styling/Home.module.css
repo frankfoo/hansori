@@ -39,8 +39,8 @@
     background-size: cover;
     background-position: center;
 
-    padding-left: 25vw;
-    padding-right: 25vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
 
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
 }
 
 .banner1Description {
-    font-size: 1.1em;
+    font-size: 0.9em;
     letter-spacing: 1.1px;
 }
 
@@ -75,9 +75,9 @@
     margin-right: 2em;
 }
 .btn {
-    width: 8vw;
+    width: 9vw;
     height: 4vh;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: bold;
 }
 .btn:hover {
@@ -93,8 +93,8 @@
     background-size: cover;
     background-position: center;
 
-    padding-left: 25vw;
-    padding-right: 25vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
 
     display: flex;
     flex-direction: column;
@@ -105,22 +105,136 @@
     color: white;
 }
 
+.banner2:hover {
+    cursor: pointer;
+}
+
 .banner2Title {
     font-size: 2.6em;
     font-weight: bold;
     padding-bottom: 1em;
 }
 
-/* Banner 3 */
-.banner3 {
-    height: 20vh;
-    border: 1px solid black;
+.banner2Title:hover {
+    color: orange;
 }
 
-.photos {
-    height: 20vh;
-    border: 1px solid black;
+.banner2Description {
+    letter-spacing: 1.1px;
+    font-size: 0.9em;
 }
+
+/* Banner 3 */
+.banner3 {
+    height: 40vh;
+    border: 1px solid black;
+
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url(../Images/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.upperText {
+    
+    color: white;
+}
+
+.upperTextTitle {
+    font-size: 2.6em;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.upperTextDesc {
+    font-size: 0.9em;
+    letter-spacing: 1.1px;
+    font-style: italic;
+}
+
+.banner3Photos {
+    height: 14vw;
+    width: 50vw;
+
+    display: flex;
+    justify-content: space-evenly
+
+}
+
+.banner3Left, .banner3Middle, .banner3Right {
+    height: 14vw;
+    width: 14vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banner3Left > p, .banner3Middle >p, .banner3Right > p {
+    color: white;
+    font-style: italic;
+}
+
+.banner3Left > img , .banner3Middle > img, .banner3Right > img {
+    width: 30%;
+    padding-bottom: 5%;
+}
+
+.banner3Left:hover, .banner3Middle:hover, .banner3Right:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.banner3Left {
+    background-image: url(../Images/banner3Left1.jpg);
+}
+
+.banner3Middle {
+    background-image: url(../Images/banner3Middle1.jpg);
+}
+
+.banner3Right {
+    background-image: url(../Images/banner3Right1.jpg);
+}
+
+/* Grid Photos */
+.photos {
+    height: 160vh;
+    border: 1px solid black;
+
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+
+    background-color: black;
+
+}
+
+.gridImg {
+    height: 100%;
+    width: 100%;
+}
+
+
+
 
 /* Media Queries */
 @media (max-width: 1300px) {

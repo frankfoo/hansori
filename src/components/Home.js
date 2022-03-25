@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
+import FileSaver from 'file-saver';
 
 /* Custom Components */
 import Navbar from './Navbar.js';
@@ -13,6 +14,43 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
+
+/* Importing Images */
+import email from '../Icons/email.jpg';
+import facebook from '../Icons/facebook.jpg';
+import instagram from '../Icons/instagram.jpg';
+
+import grid1 from '../Images/grid1.jpg';
+import grid2 from '../Images/grid2.jpg';
+import grid3 from '../Images/grid3.jpg';
+import grid4 from '../Images/grid4.jpg';
+import grid5 from '../Images/grid5.jpg';
+import grid6 from '../Images/grid6.jpg';
+import grid7 from '../Images/grid7.jpg';
+import grid8 from '../Images/grid8.jpg';
+import grid9 from '../Images/grid9.jpg';
+import grid10 from '../Images/grid10.jpg';
+import grid11 from '../Images/grid11.jpg';
+import grid12 from '../Images/grid12.jpg';
+
+/* PDF File*/
+import hansoriSponsorship from '../Files/SPONSORSITE.pdf';
+const downloadFile = () => {
+    console.log('click');
+    FileSaver.saveAs(
+        hansoriSponsorship,
+        "HansoriSponsorship.pdf"
+    )
+}
+
+/* https://stackoverflow.com/questions/45046030/maintaining-href-open-in-new-tab-with-an-onclick-handler-in-react */
+const openNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener, noreferrer')
+    if (newWindow) newWindow.opener = null
+}
+
+/* Populating grid */
 
 const Home = () => {
     return (
@@ -39,15 +77,43 @@ const Home = () => {
                     <Button variant="dark" className={styles.btn}>SPONSOR US</Button>
                 </div>
             </div>
-            <div className={styles.banner2}>
+            <div className={styles.banner2} onClick={() => downloadFile()}>
                 <p className={styles.banner2Title}>CLICK FOR SPONSORSHIP FORM</p>
-                <p>Download the file above and fill out our Hansori Music Sponsorship form to join our movement in empowering musicians with opportunities to perform at our Biannual events, learn more about your benefits</p>
+                <p className={styles.banner2Description}>Download the file above and fill out our Hansori Music Sponsorship form to join our movement in empowering musicians with opportunities to perform at our Biannual events, learn more about your benefits</p>
             </div>
             <div className={styles.banner3}>
-                <p>Banner here</p>
+                <div className={styles.upperText}>
+                    <p className={styles.upperTextTitle}>GET IN TOUCH</p>
+                    <p className={styles.upperTextDesc}>We'd love to hear from you</p>
+                </div>
+                <div className={styles.banner3Photos}>
+                    <div className={styles.banner3Left} onClick={() => openNewTab('mailto:HANSORIMUSICSYD@GMAIL.COM')}>
+                        <img src={email} />
+                        <p>hansorimusicsyd@gmail.com</p>
+                    </div>
+                    <div className={styles.banner3Middle} onClick={() => openNewTab('https://www.instagram.com/hansorimusic/')}>
+                        <img src={instagram} />
+                        <p>@hansorimusic</p>
+                    </div>
+                    <div className={styles.banner3Right} onClick={() => openNewTab('https://www.facebook.com/hansorimusicsyd/')}>
+                        <img src={facebook} />
+                        <p>@hansorimusicsyd</p>
+                    </div>
+                </div>
             </div>
             <div className={styles.photos}>
-                <p>Photos here</p>
+                <img src={grid1} className={styles.gridImg}/>
+                <img src={grid2} className={styles.gridImg}/>
+                <img src={grid3} className={styles.gridImg}/>
+                <img src={grid4} className={styles.gridImg}/>
+                <img src={grid5} className={styles.gridImg}/>
+                <img src={grid6} className={styles.gridImg}/>
+                <img src={grid7} className={styles.gridImg}/>
+                <img src={grid8} className={styles.gridImg}/>
+                <img src={grid9} className={styles.gridImg}/>
+                <img src={grid10} className={styles.gridImg}/>
+                <img src={grid11} className={styles.gridImg}/>
+                <img src={grid12} className={styles.gridImg}/>
             </div>
         </div>
     )
