@@ -213,11 +213,10 @@
 
 /* Grid Photos */
 .photos {
-    height: 160vh;
+    height: 156vh;
     border: 1px solid black;
 
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 2vw;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -233,7 +232,10 @@
     width: 100%;
 }
 
-
+/* Footer */
+.footer {
+    height: 5vh;
+}
 
 
 /* Media Queries */

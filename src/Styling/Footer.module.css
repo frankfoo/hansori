@@ -1,0 +1,29 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid black;
+    background-color: black;
+}
+
+.container > p {
+    margin: 0px;
+    color: white;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logos > img {
+    height: 1vw;
+    padding-left: 1vw;
+}
+
+.logos > img:hover {
+    cursor: pointer;
+}

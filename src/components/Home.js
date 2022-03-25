@@ -4,6 +4,7 @@ import FileSaver from 'file-saver';
 
 /* Custom Components */
 import Navbar from './Navbar.js';
+import Footer from './Footer.js';
 
 /* Styling*/
 import styles from '../Styling/Home.module.css';
@@ -114,6 +115,9 @@ const Home = () => {
                 <img src={grid10} className={styles.gridImg}/>
                 <img src={grid11} className={styles.gridImg}/>
                 <img src={grid12} className={styles.gridImg}/>
+            </div>
+            <div className={styles.footer}>
+                <Footer />
             </div>
         </div>
     )
