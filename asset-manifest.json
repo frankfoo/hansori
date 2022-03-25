@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hansori/static/css/main.68f44166.css",
-    "main.js": "/hansori/static/js/main.ffcdd588.js",
+    "main.css": "/hansori/static/css/main.ef45481a.css",
+    "main.js": "/hansori/static/js/main.a6cc9ebc.js",
     "static/js/787.fe563e21.chunk.js": "/hansori/static/js/787.fe563e21.chunk.js",
     "static/media/banner1v4.jpg": "/hansori/static/media/banner1v4.92b3ba2b84060e0d62a2.jpg",
     "static/media/grid1.jpg": "/hansori/static/media/grid1.d8d916fc95647019bbc4.jpg",
@@ -22,15 +22,18 @@
     "static/media/grid6.jpg": "/hansori/static/media/grid6.051783e72531d4189502.jpg",
     "static/media/grid3.jpg": "/hansori/static/media/grid3.9234661e5dc2edc0c18e.jpg",
     "static/media/banner3Left1.jpg": "/hansori/static/media/banner3Left1.b619e63fca778d47882d.jpg",
+    "static/media/instagramFooter.svg": "/hansori/static/media/instagramFooter.62572c862d53f228aa8eff879e2e1d37.svg",
     "static/media/logo.svg": "/hansori/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/logo.webp": "/hansori/static/media/logo.5bff94817fe0fdad57be.webp",
+    "static/media/youtubeFooter.svg": "/hansori/static/media/youtubeFooter.9e6e68bec2c1f5e29b3b54dc02f54c47.svg",
     "index.html": "/hansori/index.html",
-    "main.68f44166.css.map": "/hansori/static/css/main.68f44166.css.map",
-    "main.ffcdd588.js.map": "/hansori/static/js/main.ffcdd588.js.map",
+    "static/media/facebookFooter.svg": "/hansori/static/media/facebookFooter.31ef16ddef4cbb4df5ced8dd63c26667.svg",
+    "main.ef45481a.css.map": "/hansori/static/css/main.ef45481a.css.map",
+    "main.a6cc9ebc.js.map": "/hansori/static/js/main.a6cc9ebc.js.map",
     "787.fe563e21.chunk.js.map": "/hansori/static/js/787.fe563e21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68f44166.css",
-    "static/js/main.ffcdd588.js"
+    "static/css/main.ef45481a.css",
+    "static/js/main.a6cc9ebc.js"
   ]
 }
