@@ -1,12 +1,12 @@
 .container {
-    background-color: beige;
-    min-height: 100%;
-    min-width: 100%;
+    height: 8vh;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
+
 }
 
 /* Left Side */
@@ -14,13 +14,18 @@
 .left {
     flex: 1;
     display: flex;
+    align-items: center;
+}
+
+.left:hover{
+    cursor: pointer;
 }
 
 .logo {
-    background-color: red;
     margin: 0px;
     padding: 0px;
     height: 8vh;
+
 }
 
 .titleContainer {
@@ -87,17 +92,36 @@
     }
 }
 
-@media (max-width: 850px) {
-    .logo {
-        height: 3.5vh;
-    }
-    .titleText, .titleText1 {
-        font-size: .7em;
+@media (max-width: 950px) {
+    .container {
+        padding-left: 5vw;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .container {
+        height: 12vh;
         flex-direction: column;
+    }
+
+    .left {
+        padding-top: 1vh;
+    }
+
+}
+
+/* iPhone 12 - Smallest size we need to cover? */
+@media (max-width: 440px) {
+    .container {
+        height: 12vh;
+    }
+    .titleText, .titleText1 {
+        font-size: .6em;
+    }
+    .left {
+        padding-top: 2vh;
+    }
+    .right {
+        font-size: 0.7em;
     }
 }

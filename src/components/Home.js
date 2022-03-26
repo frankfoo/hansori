@@ -103,18 +103,18 @@ const Home = () => {
                 </div>
             </div>
             <div className={styles.photos}>
-                <img src={grid1} className={styles.gridImg}/>
-                <img src={grid2} className={styles.gridImg}/>
-                <img src={grid3} className={styles.gridImg}/>
-                <img src={grid4} className={styles.gridImg}/>
-                <img src={grid5} className={styles.gridImg}/>
-                <img src={grid6} className={styles.gridImg}/>
-                <img src={grid7} className={styles.gridImg}/>
-                <img src={grid8} className={styles.gridImg}/>
-                <img src={grid9} className={styles.gridImg}/>
-                <img src={grid10} className={styles.gridImg}/>
-                <img src={grid11} className={styles.gridImg}/>
-                <img src={grid12} className={styles.gridImg}/>
+                <img src={grid1} alt="Grid " className={styles.gridImg}/>
+                <img src={grid2} alt="Grid " className={styles.gridImg}/>
+                <img src={grid3} alt="Grid " className={styles.gridImg}/>
+                <img src={grid4} alt="Grid " className={styles.gridImg}/>
+                <img src={grid5} alt="Grid " className={styles.gridImg}/>
+                <img src={grid6} alt="Grid " className={styles.gridImg}/>
+                <img src={grid7} alt="Grid " className={styles.gridImg}/>
+                <img src={grid8} alt="Grid " className={styles.gridImg}/>
+                <img src={grid9} alt="Grid " className={styles.gridImg}/>
+                <img src={grid10} alt="Grid " className={styles.gridImg}/>
+                <img src={grid11} alt="Grid " className={styles.gridImg}/>
+                <img src={grid12} alt="Grid " className={styles.gridImg}/>
             </div>
             <div className={styles.footer}>
                 <Footer />

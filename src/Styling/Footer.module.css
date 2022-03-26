@@ -27,3 +27,21 @@
 .logos > img:hover {
     cursor: pointer;
 }
+
+@media (max-width: 1500px) {
+    .logos > img {
+        height: 2vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .logos > img {
+        height: 3vw;
+    }
+}
+
+@media (max-width: 440px) {
+    .container > p {
+        font-size: 0.5em;
+    }
+}

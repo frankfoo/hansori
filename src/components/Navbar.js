@@ -7,12 +7,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../Icons/logo.webp';
 
 /* Bootstrap Components*/
-import {Container, Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+
+/* https://stackoverflow.com/questions/45046030/maintaining-href-open-in-new-tab-with-an-onclick-handler-in-react */
+const openNewTab = (url) => {
+    const newWindow = window.open(url, '_self', 'noopener, noreferrer')
+}
 
 const navBar = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.left}>
+            <div className={styles.left} onClick={() => openNewTab('/hansori')} >
                 <img src={logo} alt="Hansori Logo" className={styles.logo}/>
                 <div className={styles.titleContainer}>
                     <p className={styles.titleText}>HANSORI MUSIC</p>
@@ -26,7 +31,7 @@ const navBar = () => {
                     <Nav>
                         <Nav.Link><Link to="/" className={styles.navLink}>Home</Link></Nav.Link>
                         <Nav.Link><Link to="/about" className={styles.navLink}>About</Link></Nav.Link>
-                        <NavDropdown title="Concerts" id="basic-nav-dropdown" className={styles.navLink}>
+                        <NavDropdown title="Concerts" id="basic-nav-dropdown" className={styles.navLink} >
                             <NavDropdown.Item href="#action/3.1">All Concerts</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Mosman September 2020</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Shanghai December 2019</NavDropdown.Item>
