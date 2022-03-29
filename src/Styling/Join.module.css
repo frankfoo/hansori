@@ -1,6 +1,4 @@
 .container {
-    margin-left: 24vw;
-    margin-right: 24vw;
     padding: 0px;
     background-color: black;
     min-height: 100vh;
@@ -21,9 +19,13 @@
     min-height: 100%;
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.7fr;
     grid-template-rows: 1fr;
     padding-top: 2vh;
+
+    margin-left: 24vw;
+    margin-right: 24vw;
+
 }
 
 .info {
@@ -46,35 +48,72 @@
 
 .info > p {
 }
-.pic1 {
-    height: 80%;
-    width: 100%;
+
+.pic {
+    height: 25em;
+    width: 35em;
 }
 
 .footer {
     height: 4vh;
+    margin-left: 24vw;
+    margin-right: 24vw;
 }
 /* Media Queries */
 @media (max-width: 1660px) { /* 1600px * 900px */
-    .container {
+    .footer {
         margin-left: 20vw;
         margin-right: 20vw;
     }
+    .body {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+
 }
 
 @media (max-width: 1440px) {
     .info {
         padding-left: 0vw;
     }
+    .pic {
+        height: 20rem;
+        width: 30rem;
+    }
+
 }
 
 @media (max-width: 1280px) { /* 1280px * 1024px */
-    .container {
+    .footer {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .body {
         margin-left: 10vw;
         margin-right: 10vw;
     }
 }
 
 @media (max-width: 1024px) {
+    .body {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .footer {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .pic {
 
+    }
+}
+
+@media (max-width: 500px) {
+    .body {
+        width: 50vw;
+    }
 }

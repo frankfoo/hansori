@@ -11,8 +11,6 @@
 .header {
     height: 8vh;
     background-color: pink;
-    margin-left: 24vw;
-    margin-right: 24vw;
 }
 
 /* Video Section*/
@@ -237,10 +235,6 @@
 
 /* Media Queries */
 @media (max-width: 1660px) { /* 1600px * 900px */
-    .header {
-        margin-left: 20vw;
-        margin-right: 20vw;
-    }
     .videoContainer {
         width: 60%;
     }
@@ -273,10 +267,6 @@
 }
 
 @media (max-width: 1280px) { /* 1280px * 1024px */
-    .header {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
     .videoContainer {
         width: 70%;
     }
@@ -306,10 +296,6 @@
 }
 
 @media (max-width: 1024px ) { /* 1024 * 768 */
-    .header {
-        margin-left: 0vw;
-        margin-right: 0vw;
-    }
     .videoContainer {
         width: 100%;
     }

@@ -30,7 +30,7 @@ const Ensemble = () => {
                 </p>
                 <p>btn goes here</p>
             </div>
-            <img src={pic1} alt="String Ensemble" className={styles.pic1} />
+            <img src={pic1} alt="String Ensemble" className={styles.pic} />
         </div>
     )
 }
@@ -63,7 +63,7 @@ const Volunteer = () => {
                 </p>
                 <p>btn goes here</p>
             </div>
-            <img src={pic2} alt="String Ensemble" className={styles.pic1} />
+            <img src={pic2} alt="String Ensemble" className={styles.pic} />
         </div>
     )
 }
@@ -96,7 +96,7 @@ const Sponsor = () => {
                 </p>
                 <p>btn goes here</p>
             </div>
-            <img src={pic3} alt="String Ensemble" className={styles.pic1} />
+            <img src={pic3} alt="String Ensemble" className={styles.pic} />
         </div>
     )
 }
