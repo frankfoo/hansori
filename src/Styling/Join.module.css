@@ -63,11 +63,18 @@
 }
 
 @media (max-width: 1440px) {
-    .container {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
     .info {
-        padding-left: 5vw;
+        padding-left: 0vw;
     }
+}
+
+@media (max-width: 1280px) { /* 1280px * 1024px */
+    .container {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+@media (max-width: 1024px) {
+
 }

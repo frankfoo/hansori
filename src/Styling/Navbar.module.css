@@ -106,14 +106,21 @@
 }
 
 @media (max-width: 1440px) {
+   .navLink { 
+       padding-right: 1vw;
+   }
 }
 
 @media (max-width: 1280px) {
     .titleText, .titleText1 {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
     .navBarContainer {
         width: 35%;
+    }
+    .container {
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 }
 
@@ -122,14 +129,18 @@
 }
 
 @media (max-width: 1000px) {
-    .titleText, .titleText1 {
-        font-size: 0.9em;
-    }
     .logo {
-        height: 6vh;
+        height: 4vh;
     }
     .navBarContainer {
         width: 25%;
+    }
+    .navLink {
+        padding-right: 0vw;
+    }
+    .container {
+        padding-left: 8vw;
+        padding-right: 8vw;
     }
 }
 
