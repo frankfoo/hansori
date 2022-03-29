@@ -2,25 +2,26 @@ body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-  font-family: 'Playfair Display', serif;
+    sans-serif; 
+  /* font-family: 'Playfair Display', serif;
   font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica'; */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-overflow-scrolling: touch;
-  background-color: white;
+  background-color: black;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: 'Helvetica';
 }
 
 #root {
   background-color: black;
   box-sizing: border-box;
- 
-
+  font-family: 'Helvetica';
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');

@@ -33,7 +33,6 @@ import grid8 from '../Images/grid8.jpg';
 import grid9 from '../Images/grid9.jpg';
 import grid10 from '../Images/grid10.jpg';
 import grid11 from '../Images/grid11.jpg';
-import grid12 from '../Images/grid12.jpg';
 
 /* PDF File*/
 import hansoriSponsorship from '../Files/SPONSORSITE.pdf';
@@ -61,7 +60,7 @@ const Home = () => {
             </div>
             <div className={styles.video}>
                 <div className={styles.videoContainer}>
-                    <ReactPlayer url="https://youtu.be/VRhwWWMLQkE" playing="true" muted="true" controls="true" width="100%" height="100%" className={styles.videoPlayer}/>
+                    <ReactPlayer url="https://youtu.be/VRhwWWMLQkE" muted="true" controls="true" width="100%" height="100%" className={styles.videoPlayer}/>
                 </div>
             </div>
             <div className={styles.banner1}>
@@ -114,7 +113,6 @@ const Home = () => {
                 <img src={grid9} alt="Grid " className={styles.gridImg}/>
                 <img src={grid10} alt="Grid " className={styles.gridImg}/>
                 <img src={grid11} alt="Grid " className={styles.gridImg}/>
-                <img src={grid12} alt="Grid " className={styles.gridImg}/>
             </div>
             <div className={styles.footer}>
                 <Footer />

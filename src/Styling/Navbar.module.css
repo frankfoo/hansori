@@ -1,12 +1,9 @@
 .container {
     height: 8vh;
     width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     font-family: 'Open Sans', sans-serif;
 
+    background-color: black;
 }
 
 /* Left Side */
@@ -15,6 +12,7 @@
     flex: 1;
     display: flex;
     align-items: center;
+    background-color: black;
 }
 
 .left:hover{
@@ -34,7 +32,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -56,72 +53,90 @@
 }
 
 /* Right Side */
-.right {
-    flex: 2;
-    background-color: black;
-}
-
 .navBar {
     height: 100%;
-    color: white;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .navLink {
-    color: white;
+    color: white !important;
     text-decoration: none;
     padding-right: 2vw;
 }
 
-.navLink:hover {
+.navLink1 {
+    color: black;
+    text-decoration: none;
+}
+
+.navLink1:hover {
     color: orange;
 }
 
-/* Media Queries */
-@media (max-width: 1300px) {
-    .logo {
-        height: 6vh;
-    }
+.navLink:hover {
+    color: orange !important;
 }
 
-@media (max-width: 1150px) {
+.navBarContainer {
+    justify-content: flex-end;
+    width: 30%;
+
+}
+
+.navBarDropdown {
+    align-items: center;
+    background-color: black;
+}
+
+/* Media Queries */
+@media (max-width: 1800px) {
     .logo {
-        height: 4vh;
+        height: 6vh;
     }
     .titleText, .titleText1 {
         font-size: 1em;
     }
 }
 
-@media (max-width: 950px) {
-    .container {
-        padding-left: 5vw;
+@media (max-width: 1660px) {
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+    .titleText, .titleText1 {
+        font-size: 1.2em;
+    }
+    .navBarContainer {
+        width: 35%;
     }
 }
 
-@media (max-width: 750px) {
-    .container {
-        height: 12vh;
-        flex-direction: column;
-    }
+@media (max-width: 1200px) {
 
-    .left {
-        padding-top: 1vh;
-    }
+}
 
+@media (max-width: 1000px) {
+    .titleText, .titleText1 {
+        font-size: 0.9em;
+    }
+    .logo {
+        height: 6vh;
+    }
+    .navBarContainer {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    
 }
 
 /* iPhone 12 - Smallest size we need to cover? */
 @media (max-width: 440px) {
-    .container {
-        height: 12vh;
-    }
-    .titleText, .titleText1 {
-        font-size: .6em;
-    }
-    .left {
-        padding-top: 2vh;
-    }
-    .right {
-        font-size: 0.7em;
-    }
 }
