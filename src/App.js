@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home.js';
 import About from './components/About.js';
 import Join from './components/Join.js';
+import AllConcerts from './components/AllConcerts.js';
 
 function App() {;
   return (
@@ -20,6 +21,7 @@ function App() {;
         <Route path="/hansori-string-ensemble" element={<Join flag="1"/>} />
         <Route path="/volunteer" element={<Join flag="2"/>} />
         <Route path="/sponsor-us" element={<Join flag="3"/>} />
+        <Route path="/concerts" element={<AllConcerts />} />
       </Routes>
     </BrowserRouter>
   );

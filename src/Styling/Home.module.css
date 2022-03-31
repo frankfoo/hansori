@@ -3,7 +3,6 @@
     /* background-color: rgb(169, 231, 195); */
     min-height: 100vh;
     max-width: 100vw;
-
     display: flex;
     flex-direction: column;
 }
@@ -231,6 +230,10 @@
 /* Footer */
 .footer {
     height: 5vh;
+}
+
+@media (max-width: 2560px) {
+
 }
 
 /* Media Queries */

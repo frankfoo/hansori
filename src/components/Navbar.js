@@ -31,7 +31,7 @@ const navBar = () => {
                     <Nav.Link><Link to="/" className={styles.navLink}>Home</Link></Nav.Link>
                     <Nav.Link><Link to="/about" className={styles.navLink}>About</Link></Nav.Link>
                     <NavDropdown title="Concerts" id="basic-nav-dropdown" className={styles.navLink}>
-                        <NavDropdown.Item href="#action/3.1">All Concerts</NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/concerts" className={styles.navLink1}>All Concerts</Link></NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Mosman September 2020</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Shanghai December 2019</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.1">Mosman December 2019</NavDropdown.Item>
