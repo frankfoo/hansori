@@ -1,11 +1,22 @@
 {
   "files": {
-    "main.css": "/hansori/static/css/main.5c06f624.css",
-    "main.js": "/hansori/static/js/main.eb72900c.js",
+    "main.css": "/hansori/static/css/main.546e5c40.css",
+    "main.js": "/hansori/static/js/main.d9aa31ba.js",
     "static/js/787.fe563e21.chunk.js": "/hansori/static/js/787.fe563e21.chunk.js",
     "static/media/banner1v4.jpg": "/hansori/static/media/banner1v4.92b3ba2b84060e0d62a2.jpg",
     "static/media/grid1.jpg": "/hansori/static/media/grid1.d8d916fc95647019bbc4.jpg",
     "static/media/banner3.jpg": "/hansori/static/media/banner3.374847d91a8a982ca618.jpg",
+    "static/media/1.jpg": "/hansori/static/media/1.5ac54b8767f95cf180a8.jpg",
+    "static/media/5.jpg": "/hansori/static/media/5.f8fda192d0ce7146697d.jpg",
+    "static/media/6.jpg": "/hansori/static/media/6.b8be0d802d02b1de88aa.jpg",
+    "static/media/4.jpg": "/hansori/static/media/4.02c4775cc74d2c6a55ac.jpg",
+    "static/media/10.jpg": "/hansori/static/media/10.8a28212f62759adc9a66.jpg",
+    "static/media/3.jpg": "/hansori/static/media/3.37db94dbd1c77ecd49c8.jpg",
+    "static/media/2.jpg": "/hansori/static/media/2.45b896a3abb1ee893e5e.jpg",
+    "static/media/7.jpg": "/hansori/static/media/7.3a654013950dd95fee6e.jpg",
+    "static/media/11.jpg": "/hansori/static/media/11.d38dc2272c27b4f122b1.jpg",
+    "static/media/9.jpg": "/hansori/static/media/9.2f4c66f321e4000c8c8b.jpg",
+    "static/media/8.jpg": "/hansori/static/media/8.8a3f419d892b0d289d7b.jpg",
     "static/media/SPONSORSITE.pdf": "/hansori/static/media/SPONSORSITE.b85eb46daa8abc7ab1ec.pdf",
     "static/media/grid10.jpg": "/hansori/static/media/grid10.693dde7c31eb09fceae6.jpg",
     "static/media/sponsorus1.jpg": "/hansori/static/media/sponsorus1.8fbd5999298b02af959a.jpg",
@@ -34,12 +45,12 @@
     "static/media/youtubeFooter.svg": "/hansori/static/media/youtubeFooter.9e6e68bec2c1f5e29b3b54dc02f54c47.svg",
     "index.html": "/hansori/index.html",
     "static/media/facebookFooter.svg": "/hansori/static/media/facebookFooter.31ef16ddef4cbb4df5ced8dd63c26667.svg",
-    "main.5c06f624.css.map": "/hansori/static/css/main.5c06f624.css.map",
-    "main.eb72900c.js.map": "/hansori/static/js/main.eb72900c.js.map",
+    "main.546e5c40.css.map": "/hansori/static/css/main.546e5c40.css.map",
+    "main.d9aa31ba.js.map": "/hansori/static/js/main.d9aa31ba.js.map",
     "787.fe563e21.chunk.js.map": "/hansori/static/js/787.fe563e21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c06f624.css",
-    "static/js/main.eb72900c.js"
+    "static/css/main.546e5c40.css",
+    "static/js/main.d9aa31ba.js"
   ]
 }
