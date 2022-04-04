@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 /* Custom Components */
 import Navbar from './Navbar.js';
@@ -28,7 +29,7 @@ const Ensemble = () => {
                     To find out more information or to present an expression of interest, please fill out your contact information including your name, email address, 
                     phone number, instrument, as well as a brief description of your music experiences, and brief introduction of your self. 
                 </p>
-                <p>btn goes here</p>
+                <button type="button"><Link to="/contact" className={styles.link}>Contact Us</Link></button>
             </div>
             <img src={pic1} alt="String Ensemble" className={styles.pic} />
         </div>
@@ -61,7 +62,7 @@ const Volunteer = () => {
                 <p>
                     To apply for volunteering positions, submit your name, contact number, email and cv to our contacts page. 
                 </p>
-                <p>btn goes here</p>
+                <button type="button"><Link to="/contact" className={styles.link}>Contact Us</Link></button>
             </div>
             <img src={pic2} alt="String Ensemble" className={styles.pic} />
         </div>
@@ -94,7 +95,7 @@ const Sponsor = () => {
                     charitable community concerts which will occur across the year. Additionally, we are planning to establish our first Hansori Music Competition for young, 
                     talented musicians such as HSC music students in Sydney, Australia.  Your invaluable support is much needed.
                 </p>
-                <p>btn goes here</p>
+                <button type="button"><Link to="/contact" className={styles.link}>Contact Us</Link></button>
             </div>
             <img src={pic3} alt="String Ensemble" className={styles.pic} />
         </div>

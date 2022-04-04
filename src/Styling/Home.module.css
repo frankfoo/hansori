@@ -1,176 +1,97 @@
 .container {
     padding: 0px;
     /* background-color: rgb(169, 231, 195); */
+    background-color: black;
     min-height: 100vh;
-    max-width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    font-family: Helvetica, sans-serif;
+    color: white;
 }
 
 .header {
-    height: 8vh;
-    background-color: pink;
+    min-height: 8vh;
+    background-color: black;
 }
 
-/* Video Section*/
-
+/* Video */
 .video {
-    height: 40vh;
+    min-height: 35vh;
+    margin: auto;
+    width: min(90%, 60rem);
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
-.videoContainer {
-    height: 100%;
-    width: 52%;
+.videoPlayer {
+    background-color: black;
 }
 
-/* Banner 1 */
-
+/* Banner1 */
 .banner1 {
-    height: 35vh;
-    background-image: url(../Images/banner1v4.jpg); /* https://unsplash.com/photos/7CcPLtywRso */
+    min-height: 35vh;
+    padding: 3rem 0;
+    background-image: url('../Images/banner1v4.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-
-    padding-left: 28vw;
-    padding-right: 28vw;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-
-    color: white;
-
 }
 
-.banner1Title {
-    font-size: 2.6rem;
+.banner1 > * {
+    margin: auto;
+    width: min(90%, 60rem);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.banner1 > h1 {
+    font-size: 3rem;
     font-weight: bold;
 }
 
-.banner1Description {
-    font-size: 0.9rem;
-    letter-spacing: 1.1px;
-}
-
-.banner1JoinUs {
+.banner1 > p {
     font-size: 1.1rem;
+}
+
+.banner1 > h2 {
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
-.button1Container {
+.banner1Buttons {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
 }
-.button1Container > Button {
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
+
 .btn {
-    width: 9vw;
-    height: 4vh;
-    font-size: 0.6rem;
+    width: 18em;
+    min-height: 4em;
     font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 15px;
+    background-color: rgb(170, 88, 17);
+    border-color: rgb(170, 88, 17);
 }
+
 .btn:hover {
-    background-color: white;
-    color: black;
+    /* background-color: #345BCB;
+    color: black; */
 }
 
 /* Banner 2 */
-
 .banner2 {
-    height: 30vh;
-    background-image: url(../Images/bannerv2.jpg); /* https://unsplash.com/photos/7CcPLtywRso */
-    background-size: cover;
-    background-position: center;
-
-    padding-left: 28vw;
-    padding-right: 28vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    color: white;
-}
-
-.banner2:hover {
-    cursor: pointer;
-}
-
-.banner2Title {
-    font-size: 2.6em;
-    font-weight: bold;
-    padding-bottom: 1rem;
-}
-
-.banner2Title:hover {
-    color: orange;
-}
-
-.banner2Description {
-    letter-spacing: 1.1px;
-    font-size: 0.9rem;
-}
-
-/* Banner 3 */
-.banner3 {
-    height: 40vh;
-    border: 1px solid black;
-
-    padding-left: 20vw;
-    padding-right: 20vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    background-image: url(../Images/banner3.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.upperText {
-    
-    color: white;
-}
-
-.upperTextTitle {
-    font-size: 2.6rem;
-    font-weight: bold;
-    margin-bottom: 0px;
-}
-
-.upperTextDesc {
-    font-size: 0.9rem;
-    letter-spacing: 1.1px;
-    font-style: italic;
-}
-
-.banner3Photos {
-    height: 14vw;
-    width: 50vw;
-
-    display: flex;
-    justify-content: space-evenly
-
-}
-
-.banner3Left, .banner3Middle, .banner3Right {
-    height: 14vw;
-    width: 14vw;
-    background-position: center;
+    min-height: 25vh;
+    padding: 2rem 0;
+    background-image: url('../Images/banner2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -178,203 +99,176 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    text-align: center;
 }
 
-.banner3Left > p, .banner3Middle >p, .banner3Right > p {
-    color: white;
+.banner2 > * {
+    margin: auto;
+    width: min(90%, 60rem);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.banner2 > h2 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.banner2 > h2:hover {
+    color: orange;
+}
+
+.banner2 > p {
+    font-size: 1.1rem;
+}
+
+/* Banner 3 */
+.banner3 {
+    min-height: 40vh;
+    padding: 3rem 0;
+    background-image: url('../Images/banner3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner3 > * {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.banner3 > h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner3 > p {
+    font-size: 1.1rem;
     font-style: italic;
 }
 
-.banner3Left > img , .banner3Middle > img, .banner3Right > img {
-    width: 30%;
-    padding-bottom: 5%;
+.banner3PhotoGrid {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.banner3Left:hover, .banner3Middle:hover, .banner3Right:hover {
-    cursor: pointer;
-    transform: scale(1.01);
+.banner3PhotoGrid > * {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 20rem;
+    width: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner3Left {
-    background-image: url(../Images/banner3Left1.jpg);
+    background-image: url('../Images/banner3Left1.jpg');
 }
 
 .banner3Middle {
-    background-image: url(../Images/banner3Middle1.jpg);
+    background-image: url('../Images/banner3Middle1.jpg');
 }
 
 .banner3Right {
-    background-image: url(../Images/banner3Right1.jpg);
+    background-image: url('../Images/banner3Right1.jpg');
 }
 
-/* Grid Photos */
+.banner3Left > *, .banner3Middle > *, .banner3Right > * {
+    padding: 0.5rem;
+    font-style: italic;
+}
+
+/* Grid of photos */
 .photos {
-    height: 100%;
-
-    padding-top: 1.5vw;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 
-    grid-gap: 1.5vw;
+    padding: 3rem 0;
     background-color: black;
 }
 
-.gridImg {
+.photos > img {
     width: 100%;
     height: 100%;
 }
 
-/* Footer */
-.footer {
-    height: 5vh;
-}
-
-@media (max-width: 2560px) {
-
-}
-
 /* Media Queries */
-@media (max-width: 1660px) { /* 1600px * 900px */
-    .videoContainer {
-        width: 60%;
+@media (min-width: 1921px) {
+    .video {
+      width: 50%;
     }
-    .banner1 {
-        height: 40vh;
+    .videoPlayer {
+        min-height: 30vh;
     }
-    .btn {
-        width: 10vw;
-        font-size: 0.6rem;
+    .banner1 > *, .banner2 > *, .banner3 > * {
+        width: 50%;
+        margin: auto;
     }
-}
-
-@media (max-width: 1440px) { /* 1440px * 900px*/
-
-}
-
-@media (max-width: 1366px) { /* 1366px * 768px */
-    .banner1 {
-        padding-left: 15vw;
-        padding-right: 15vw;
+    .banner1 > h1, .banner2 > h2, .banner3 > h2 {
+        font-size: 4rem;
     }
-    .banner1Title {
-        font-size: 2.2rem;
-    }
-    .btn {
-        width: 12vw;
-        height: 3vw;
-        font-size: 0.6em;
+    .banner1 > p, .banner2> p, .banner3 > p {
+        font-size: 1.4rem;
     }
 }
 
-@media (max-width: 1280px) { /* 1280px * 1024px */
-    .videoContainer {
-        width: 70%;
-    }
-    .banner1 {
-        height: 35vh;
-    }
-    .btn {
-        width: 14vw;
-    }
-    .banner3 {
-        height: 45vh;
-    }
-    .banner3Photos {
-        height: 18vw;
-        width: 60vw;
-    }
-    .banner3Left, .banner3Middle, .banner3Right {
-        height: 18vw;
-        width: 18vw;
-    }
-    .banner3Left > p, .banner3Middle >p, .banner3Right > p {
-        font-size: 0.7rem;
+@media (max-width: 1024px) {
+    .banner3PhotoGrid > * {
+        height: 15rem;
+        width: 15rem;
     }
     .photos {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 1024px ) { /* 1024 * 768 */
-    .videoContainer {
-        width: 100%;
-    }
-    .banner1 {
-        height: 40vh;
-    }
-    .banner1Title {
-        font-size: 2rem;
-    }
+@media (max-width: 900px) {
     .btn {
-        height: 4vw;
-        width: 18vw;
-        font-size: 0.55rem;
-    }
-    .banner2Title {
-        font-size: 2rem;
-    }
-    .upperTextTitle {
-        font-size: 2rem;
+        font-size: 0.9em;
     }
 }
 
-@media (max-width: 768px) {
-    .banner1 {
-        height: 30vh;
-    }
+@media (max-width: 800px) {
     .btn {
-        font-size: 0.5rem;
+        font-size: 0.7em;
+    }
+    .banner3PhotoGrid {
+        flex-direction: column;
+    }
+    .banner3PhotoGrid > * {
+        height: 20rem;
+        width: 20rem;
     }
 }
 
-@media (max-width: 500px) { /* */
-    .banner1 {
-        padding-left: 5vw;
-        padding-right: 5vw;
-        height: 40vh;
-    }
-    .banner1Title {
-        font-size: 1.5rem;
+@media (max-width: 600px) {
+    .banner1Buttons {
+        flex-direction: column;
+        align-items: center;
     }
     .btn {
-        font-size: 0.4rem;
-        width: 28vw;
-        height: 8vw;
-    }
-    .button1Container > Button {
-        margin-left: 0.4rem;
-        margin-right: 0.4rem;
-    }
-    .banner2 {
-        height: 35vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-    .banner2Title {
-        font-size: 1.5rem;
-    }
-    .banner3 {
-        justify-content: flex-start;
-        height: 25vh;
-    }
-    .banner3Photos {
-        height: 30vh;
-        width: 100vw;
-    }
-    .banner3Left, .banner3Middle, .banner3Right {
-        height: 30vw;
-        width: 30vw;
-    }
-    .banner3Left > p, .banner3Middle >p, .banner3Right > p {
-        font-size: 0.5rem;
+        width: 22em;
+        min-height: 4em;
+        font-size: 1rem;
     }
     .photos {
         grid-template-columns: 1fr;
-    }
-    .footer {
-        height: 2vh;
+        padding: 0px;
+        padding-top: 2vh;
     }
 }

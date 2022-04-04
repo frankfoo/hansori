@@ -19,42 +19,42 @@ const masterclass = [[masterclass1, '??']];
 
 
 const AllConcerts = ({ flag }) => {
-    
     return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <Navbar />
             </div>
-            <div className={styles.body}>
-                <div className={styles.opera}>
-                    <h2>SYDNEY OPERA HOUSE CONCERTS</h2>
-                    <div className={styles.posters}>
-                        {operaConcerts.map((item) => {
-                            console.log(item);
-                            return (
-                                <div>
-                                    <img src={item[0]} alt='poster' />
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-                <div className={styles.workshop}>
-                    <h2>MASTERCLASS WORKSHOPS</h2>
-                    <div className={styles.posters}>
-                        {masterclass.map((item) => {
-                            return (
-                                <div>
-                                    <img src={item[0]} alt='poster' />
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-                <div className={styles.recitals}>
-                    <h2>STUDENT RECITALS</h2>
+            <div className={styles.opera}>
+                <h2>SYDNEY OPERA HOUSE CONCERTS</h2>
+                <div className={styles.posters}>
+                    {operaConcerts.map((item) => {
+                        console.log(item);
+                        return (
+                            <div>
+                                <img src={item[0]} alt='poster' className={styles.img} />
+                                <button type="button" className={styles.btn}>Read More</button>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
+            <div className={styles.workshop}>
+                <h2>MASTERCLASS WORKSHOPS</h2>
+                <div className={styles.posters}>
+                    {masterclass.map((item) => {
+                        return (
+                            <div>
+                                <img src={item[0]} alt='poster' className={styles.img} />
+                                <button type="button" className={styles.btn}>Read More</button>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+            <div className={styles.recitals}>
+                <h2>STUDENT RECITALS</h2>
+            </div>
+            <Footer />
         </div>
     )
 }
