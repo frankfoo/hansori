@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 /* Custom Components */
 import Navbar from './Navbar.js';
@@ -14,8 +15,8 @@ import rockvivaldi from '../Images/rockvivaldi.jpg';
 
 import masterclass1 from '../Images/masterclass.jpg';
 
-const operaConcerts = [[fantasy3, 'fantasy-ii-december-2017'], [fantasy2, 'masterclass-july-2017'], [soulmate, 'soul-mate-june-2016'], [rockvivaldi, 'copy-of-soul-mate-june-2016']];
-const masterclass = [[masterclass1, '??']];
+const operaConcerts = [[fantasy3, 'fantasy-iii-december-2018'], [fantasy2, 'fantasy-december-2017'], [soulmate, 'soul-mate-june-2016'], [rockvivaldi, 'vivaldi-july-2015']];
+const masterclass = [[masterclass1, 'masterclass-july-2017']];
 
 
 const AllConcerts = ({ flag }) => {
@@ -32,7 +33,7 @@ const AllConcerts = ({ flag }) => {
                         return (
                             <div>
                                 <img src={item[0]} alt='poster' className={styles.img} />
-                                <button type="button" className={styles.btn}>Read More</button>
+                                <button type="button" className={styles.btn}><Link to={`/concerts/${item[1]}`} className={styles.navLink}>Read More</Link></button>
                             </div>
                         )
                     })}
@@ -45,7 +46,7 @@ const AllConcerts = ({ flag }) => {
                         return (
                             <div>
                                 <img src={item[0]} alt='poster' className={styles.img} />
-                                <button type="button" className={styles.btn}>Read More</button>
+                                <button type="button" className={styles.btn}><Link to={`/concerts/${item[1]}`} className={styles.navLink}>Read More</Link></button>
                             </div>
                         )
                     })}

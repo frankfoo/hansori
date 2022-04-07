@@ -40,6 +40,10 @@
     color: rgb(170, 88, 17);
     letter-spacing: 30px;
 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(220, 120, 59);
+
+
 }
 
 .upper > p {
@@ -103,6 +107,7 @@
 }
 
 /* Media Queries */
+
 @media (max-width: 800px) {
     .upper {
         min-height: 40vh;

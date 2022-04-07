@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
 import FileSaver from 'file-saver';
+import { Link } from "react-router-dom";
 
 /* Custom Components */
 import Navbar from './Navbar.js';
@@ -64,9 +65,9 @@ const Home = () => {
                     hospital, Royal North Shore Hospital and primary to secondary schools in Sydney, Australia.</p>
                 <h2>JOIN US</h2>
                 <div className={styles.banner1Buttons}>
-                    <Button variant="dark" className={styles.btn}>OUR STRING ENSEMBLE</Button>
-                    <Button variant="dark" className={styles.btn}>VOLUNTEER WITH HANSORI</Button>
-                    <Button variant="dark" className={styles.btn}>SPONSOR US</Button>
+                    <Button variant="dark" className={styles.btn}><Link to="/hansori-string-ensemble" className={styles.navLink}>OUR STRING ENSEMBLE</Link></Button>
+                    <Button variant="dark" className={styles.btn}><Link to="/volunteer" className={styles.navLink}>VOLUNTEER WITH HANSORI</Link></Button>
+                    <Button variant="dark" className={styles.btn}><Link to="/sponsor-us" className={styles.navLink}>SPONSOR US</Link></Button>
                 </div>
             </div>
             <div className={styles.banner2} onClick={() => downloadFile()}>

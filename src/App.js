@@ -14,6 +14,7 @@ import Join from './components/Join.js';
 import AllConcerts from './components/AllConcerts.js';
 import Concert from './components/Concert.js';
 import Test from './components/Test.js';
+import Contact from './components/Contact.js';
 
 function App() {;
   return (
@@ -26,6 +27,7 @@ function App() {;
         <Route path="/sponsor-us" element={<Join flag="3"/>} />
         <Route path="/concerts" element={<AllConcerts />} />
         <Route path="concerts/:concertID" element={<Concert />} />
+        <Route path="/contact" element={<Contact /> } />
         <Route path="/*" element={<Test />} />
       </Routes>
     </BrowserRouter>

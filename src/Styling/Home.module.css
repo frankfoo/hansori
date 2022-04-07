@@ -87,6 +87,14 @@
     color: black; */
 }
 
+.navLink {
+    text-decoration: none;
+    color: white;
+}
+.navLink:hover {
+    color: white;
+}
+
 /* Banner 2 */
 .banner2 {
     min-height: 25vh;
@@ -102,6 +110,10 @@
     text-align: center;
 }
 
+.banner2:hover {
+    cursor: pointer;
+}
+
 .banner2 > * {
     margin: auto;
     width: min(90%, 60rem);
@@ -115,7 +127,7 @@
 }
 
 .banner2 > h2:hover {
-    color: orange;
+    color: rgb(170, 88, 17);
 }
 
 .banner2 > p {
@@ -188,6 +200,10 @@
 .banner3Left > *, .banner3Middle > *, .banner3Right > * {
     padding: 0.5rem;
     font-style: italic;
+}
+
+.banner3Left, .banner3Middle, .banner3Right {
+    cursor: pointer;
 }
 
 /* Grid of photos */

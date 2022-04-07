@@ -7,7 +7,7 @@ import Footer from './Footer.js';
 
 import pic1 from '../Images/grid1.jpg';
 import pic2 from '../Images/volunteer.jpg';
-import pic3 from '../Images/sponsorus1.jpg';
+import pic3 from '../Images/sponsorus.jpg';
 /* Styling*/
 import styles from '../Styling/Join.module.css';
 
