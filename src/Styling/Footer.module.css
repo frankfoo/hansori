@@ -31,6 +31,13 @@
     cursor: pointer;
 }
 
+@media (min-width: 1921px) {
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+}
+
 @media (max-width: 1500px) {
     .logos > img {
         height: 2vw;

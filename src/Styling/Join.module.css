@@ -77,6 +77,16 @@
     height: 4vh;
 }
 /* Media Queries */
+@media (min-width: 1921px) {
+    .body {
+        width: 50%;
+        margin: auto;
+    }
+    .info > * {
+        font-size: 1.3rem;
+    }
+}
+
 
 @media (max-width: 750px) {
     .body {

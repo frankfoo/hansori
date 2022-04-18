@@ -51,13 +51,13 @@
 }
 
 /* Individual page specific styling*/
-.blockOfText > p {
+/* .blockOfText > p {
     padding: 0px;
     margin: 0px;
-}
-.blockOfText {
+} */
+/* .blockOfText {
     padding-bottom: 1rem;
-}
+} */
 
 .image-gallery-slide > img {
     height: 500px;
@@ -65,6 +65,31 @@
 
 .fullscreen .image-gallery-slide img {
     max-height: 20vh;
+}
+
+@media (min-width: 1921px) {
+    .body {
+        width: 50%;
+        margin: auto;
+    }
+    .body > h2 {
+        font-size: 3rem;
+    }
+    .timeandlocation {
+        font-size: 1.3rem;
+    }
+    .location {
+        font-size: 1.3rem;
+    }
+    .blockOfText {
+        font-size: 1.3rem;
+    }
+    .List {
+        font-size: 1.3rem;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
 }
 
 @import "~react-image-gallery/styles/css/image-gallery.css";

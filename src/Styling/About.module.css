@@ -108,6 +108,19 @@
 
 /* Media Queries */
 
+@media (min-width: 1921px) {
+    .body {
+        width: 50%;
+        margin: auto;
+    }
+    .upper > p {
+        font-size: 10rem;
+    }
+    .lower > p {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 800px) {
     .upper {
         min-height: 40vh;

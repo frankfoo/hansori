@@ -8,52 +8,125 @@ import Footer from './Footer.js';
 /* Styling*/
 import styles from '../Styling/AllConcerts.module.css';
 
-import fantasy3 from '../Images/fantasy3.jpg';
-import fantasy2 from '../Images/fantasy2.jpg';
-import soulmate from '../Images/soulmate.jpg';
-import rockvivaldi from '../Images/rockvivaldi.jpg';
+const URL = process.env.REACT_APP_URL;
 
-import masterclass1 from '../Images/masterclass.jpg';
+const AllConcerts = () => {
+    const [operaConcerts, setOperaConcerts] = React.useState([]);
+    const [masterclass, setMasterclass] = React.useState([]);
+    const [student, setStudent] = React.useState([]);
+    const [other, setOther] = React.useState([]);
 
-const operaConcerts = [[fantasy3, 'fantasy-iii-december-2018'], [fantasy2, 'fantasy-december-2017'], [soulmate, 'soul-mate-june-2016'], [rockvivaldi, 'vivaldi-july-2015']];
-const masterclass = [[masterclass1, 'masterclass-july-2017']];
+    React.useEffect(() => {
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        };
+    
+        fetch(`${URL}/getConcertOfType`, options)
+            .then((res) => res.json())
+            .then((res) => {
+                if (res['Response'] === 'Error with server') {
+                    console.log('Error');
+                } else {
+                    console.log(res['Response'])
+                    let concerts = res['Response']
+                    
+                    // Sydney Opera House Concerts
+                    if (concerts[0].length > 0) {
+                        setOperaConcerts(concerts[0])
+                    }
+                    // Masterclass Workshops
+                    if (concerts[1].length > 0) {
+                        setMasterclass(concerts[1])
+                    }
+                    // Student Recitals
+                    if (concerts[2].length > 0) {
+                        setStudent(concerts[2])
+                    }
+                    // Other
+                    if (concerts[3].length > 0) {
+                        setOther(concerts[3])
+                    }
+                }
+            });
+    }, [])
 
-
-const AllConcerts = ({ flag }) => {
     return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <Navbar />
             </div>
-            <div className={styles.opera}>
-                <h2>SYDNEY OPERA HOUSE CONCERTS</h2>
-                <div className={styles.posters}>
-                    {operaConcerts.map((item) => {
-                        console.log(item);
-                        return (
-                            <div>
-                                <img src={item[0]} alt='poster' className={styles.img} />
-                                <button type="button" className={styles.btn}><Link to={`/concerts/${item[1]}`} className={styles.navLink}>Read More</Link></button>
-                            </div>
-                        )
-                    })}
+            <div className={styles.body} >
+                {/* Sydney Opera House Concerts */}
+                {operaConcerts.length > 0 && 
+                    <div className={styles.posterContainer}>
+                        <h2>SYDNEY OPERA HOUSE CONCERTS</h2>
+                        <div className={styles.posters}>
+                            {operaConcerts.map((item) => {
+                                return (
+                                    <div className={styles.individualPoster}>
+                                        <p>{item[1]}</p>
+                                        <img src={`${URL}/static/posters/${item[0]}.jpg`} onError={({ currentTarget  }) => { currentTarget.onError = null; currentTarget.src=`${URL}/static/posterNotFound.jpg`}} alt='poster' className={styles.img} />
+                                        <button type="button" className={styles.btn}><Link to={`/concerts/${item[0]}`} className={styles.navLink}>Read More</Link></button>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                }
+                {/* Masterclass */}
+                {masterclass.length > 0 && 
+                <div className={styles.posterContainer}>
+                    <h2>MASTERCLASS WORKSHOPS</h2>
+                    <div className={styles.posters}>
+                        {masterclass.map((item) => {
+                            return (
+                                <div className={styles.individualPoster}>
+                                    <p>{item[1]}</p>
+                                    <img src={`${URL}/static/posters/${item[0]}.jpg`} onError={({ currentTarget  }) => { currentTarget.onError = null; currentTarget.src=`${URL}/static/posterNotFound.jpg`}} alt='poster' className={styles.img} />
+                                    <button type="button" className={styles.btn}><Link to={`/concerts/${item[0]}`} className={styles.navLink}>Read More</Link></button>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
-            </div>
-            <div className={styles.workshop}>
-                <h2>MASTERCLASS WORKSHOPS</h2>
-                <div className={styles.posters}>
-                    {masterclass.map((item) => {
-                        return (
-                            <div>
-                                <img src={item[0]} alt='poster' className={styles.img} />
-                                <button type="button" className={styles.btn}><Link to={`/concerts/${item[1]}`} className={styles.navLink}>Read More</Link></button>
-                            </div>
-                        )
-                    })}
+                }
+                {/* Student Recitals */}
+                {student.length > 0 && 
+                <div className={styles.posterContainer}>
+                    <h2>STUDENT RECITALS</h2>
+                    <div className={styles.posters}>
+                        {student.map((item) => {
+                            return (
+                                <div className={styles.individualPoster}>
+                                    <p>{item[1]}</p>
+                                    <img src={`${URL}/static/posters/${item[0]}.jpg`} onError={({ currentTarget  }) => { currentTarget.onError = null; currentTarget.src=`${URL}/static/posterNotFound.jpg`}} alt='poster' className={styles.img} />
+                                    <button type="button" className={styles.btn}><Link to={`/concerts/${item[0]}`} className={styles.navLink}>Read More</Link></button>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
-            </div>
-            <div className={styles.recitals}>
-                <h2>STUDENT RECITALS</h2>
+                }
+                {/* Other */}
+                {other.length > 0 && 
+                <div className={styles.posterContainer}>
+                    <h2>OTHER</h2>
+                    <div className={styles.posters}>
+                        {other.map((item) => {
+                            return (
+                                <div className={styles.individualPoster}>
+                                    <p>{item[1]}</p>
+                                    <img src={`${URL}/static/posters/${item[0]}.jpg`} onError={({ currentTarget  }) => { currentTarget.onError = null; currentTarget.src=`${URL}/static/posterNotFound.jpg`}} alt='poster' className={styles.img} />
+                                    <button type="button" className={styles.btn}><Link to={`/concerts/${item[0]}`} className={styles.navLink}>Read More</Link></button>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+                }
             </div>
             <Footer />
         </div>

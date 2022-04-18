@@ -13,19 +13,24 @@
     background-color: black;
 }
 
-.opera, .workshop, .recitals {
-    min-height: 35vh;
-    margin: auto;
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.posterContainer {
     width: min(90%, 60rem);
     
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     padding-bottom: 2rem;
 }
 
-.opera > h2, .workshop > h2, .recitals > h2 {
+.posterContainer h2 {
     font-size: 4.5rem;
     letter-spacing: 2px;
     color: rgb(207, 180, 134);
@@ -36,11 +41,20 @@
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr)); */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1vw;
+    grid-gap: 2rem;
 
-    justify-content: center;
-    align-items: center;
     text-align: center;
+
+    color: white; 
+}
+
+.individualPoster {
+    display: flex;
+    flex-direction: column;
+}
+
+.individualPoster > p {
+    margin: 0.5rem;
 }
 
 .img {
@@ -48,6 +62,8 @@
     height: 26rem;
     object-fit: cover;
     border-radius: 15px;
+
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -56,18 +72,12 @@
     margin: auto;
 
     border-radius: 15px;
-    margin-top: 1rem;
 
     background-color: rgb(237, 12, 102);
     color: white;
     border-color: rgb(237, 12, 102);
     font-weight: normal;
     letter-spacing: 1.1px;
-}
-
-.posters > div {
-    display: flex;
-    flex-direction: column;
 }
 
 .navLink {
@@ -80,8 +90,20 @@
 }
 
 /* Media Queries */
+@media (min-width: 1921px) {
+    .posterContainer {
+        width: 50%;
+    }
+    .posters {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .posters > * {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 1050px) {
-    .opera > h2, .workshop > h2, .reticals > h2 {
+    .posterContainer h2 {
         font-size: 3.5rem;
     }
     .posters {
@@ -98,7 +120,7 @@
 }
 
 @media (max-width: 850px) {
-    .opera > h2, .workshop > h2, .reticals > h2 {
+    .posterContainer h2 {
         font-size: 2.5rem;
     }
     .posters {
@@ -114,7 +136,7 @@
 }
 
 @media (max-width: 600px) {
-    .opera > h2, .workshop > h2, .reticals > h2 {
+    .posterContainer h2 {
         font-size: 2rem;
     }
     .posters {
