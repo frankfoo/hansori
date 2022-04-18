@@ -2,7 +2,7 @@
     padding: 0px;
     background-color: black;
     width: 100%;
-    min-height: 100vh;
+    min-height: 86vh;
     display: flex;
     flex-direction: column;
     
@@ -10,11 +10,6 @@
     
     color: white;
     
-}
-
-.header {
-    min-height: 8vh;
-    background-color: black;
 }
 
 .container > .banner3 {

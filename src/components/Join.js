@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-/* Custom Components */
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
-
 import pic1 from '../Images/grid1.jpg';
 import pic2 from '../Images/volunteer.jpg';
 import pic3 from '../Images/sponsorus.jpg';
@@ -105,9 +101,6 @@ const Sponsor = () => {
 const Join = ({ flag }) => {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <Navbar />
-            </div>
             {flag === "1" && 
                 <Ensemble /> 
             }
@@ -117,9 +110,6 @@ const Join = ({ flag }) => {
             {flag === "3" &&
                 <Sponsor />
             }
-            <div className={styles.footer}>
-                <Footer />
-            </div>
         </div>
     )
 }

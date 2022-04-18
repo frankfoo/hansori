@@ -2,10 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from "react-router-dom";
 import styles from '../AdminStyling/Addconcert.module.css';
 
-/* Custom Components */
-import Navbar from '../components/Navbar.js';
-import Footer from '../components/Footer.js';
-
 /* Bootstrap Components */
 import { Form, Button, Alert, Badge } from 'react-bootstrap';
 
@@ -236,9 +232,6 @@ const Editconcert = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <Navbar />
-            </div>
             <div className={styles.body}>
                 <h1>Edit Concert</h1>
 
@@ -367,9 +360,6 @@ const Editconcert = () => {
                         )}
                     </div>
                 </Form>
-            </div>
-            <div className={styles.footer}>
-                <Footer />
             </div>
         </div>
     )

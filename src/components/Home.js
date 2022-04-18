@@ -3,10 +3,6 @@ import ReactPlayer from 'react-player'
 import FileSaver from 'file-saver';
 import { Link } from "react-router-dom";
 
-/* Custom Components */
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
-
 /* Styling*/
 import styles from '../Styling/Home.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -52,9 +48,6 @@ const openNewTab = (url) => {
 const Home = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <Navbar />
-            </div>
             <div className={styles.video}>
                 <ReactPlayer url="https://youtu.be/VRhwWWMLQkE" muted="true" controls="true" width="100%" className={styles.videoPlayer}/>
             </div>
@@ -104,9 +97,6 @@ const Home = () => {
                 <img src={grid9} alt="Grid " />
                 <img src={grid10} alt="Grid " />
                 <img src={grid11} alt="Grid " />
-            </div>
-            <div className={styles.footer}>
-                <Footer />
             </div>
         </div>
     )

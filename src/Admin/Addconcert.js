@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../AdminStyling/Addconcert.module.css';
 
-/* Custom Components */
-import Navbar from '../components/Navbar.js';
-import Footer from '../components/Footer.js';
-
 /* Bootstrap Components */
 import { Form, Button, Alert, Badge } from 'react-bootstrap';
 
@@ -186,9 +182,6 @@ const Addconcert = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <Navbar />
-            </div>
             <div className={styles.body}>
                 <h1>Add New Concert</h1>
 
@@ -317,9 +310,6 @@ const Addconcert = () => {
                         )}
                     </div>
                 </Form>
-            </div>
-            <div className={styles.footer}>
-                <Footer />
             </div>
         </div>
     )

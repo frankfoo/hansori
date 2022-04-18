@@ -1,10 +1,6 @@
 import React from 'react';
 import styles from '../Styling/Contact.module.css';
 
-/* Custom Components */
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
-
 import email from '../Icons/email.jpg';
 import facebook from '../Icons/facebook.jpg';
 import instagram from '../Icons/instagram.jpg';
@@ -17,9 +13,6 @@ const openNewTab = (url) => {
 const Contact = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-            <Navbar />
-            </div>
             <div className={styles.banner3}>
                 <h2>GET IN TOUCH</h2>
                 <p>We'd love to hear from you</p>
@@ -37,9 +30,6 @@ const Contact = () => {
                         <p>@hansorimusicsyd</p>
                     </div>
                 </div>
-            </div>
-            <div className={styles.footer}>
-                <Footer />
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom"
 import { HashRouter } from "react-router-dom";
 
 /* Styling */
-// import styles from './App.module.css';
+import styles from './App.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-image-gallery/styles/css/image-gallery.css"
 
@@ -21,10 +21,16 @@ import Admin from './Admin/Admin.js';
 import Addconcert from './Admin/Addconcert.js';
 import Editconcert from './Admin/Editconcert.js';
 
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 function App() {;
   return (
     <BrowserRouter basename="/hansori">
-      <div className={StyleSheet.container}>
+      <div className={styles.container}>
+        <div className={styles.navbar}>
+          <Navbar />
+        </div>
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -40,6 +46,9 @@ function App() {;
           <Route path="/admin/edit/:concertID" element={<Editconcert /> } />
           <Route path="/*" element={<Test />} />
         </Routes>
+        <div className={styles.footer}>
+          <Footer />
+        </div>
       </div>
     </BrowserRouter>
   );

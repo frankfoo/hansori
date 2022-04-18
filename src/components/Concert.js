@@ -3,10 +3,6 @@ import { Link, useLocation, Navigate } from "react-router-dom";
 import ImageGallery from 'react-image-gallery';
 import { Buffer } from 'buffer';
 
-/* Custom Components */
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
-
 /* Styling*/
 import styles from '../Styling/Concert.module.css';
 
@@ -81,10 +77,6 @@ const Concert = ({  }) => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <Navbar />
-            </div>
-            
             <div className={styles.body}>
                 <h2 className={styles.title}>{title}</h2>
                 <p className={styles.timeandlocation}>{time}</p>
@@ -118,9 +110,6 @@ const Concert = ({  }) => {
                         showBullets={true}
                     />
                 }
-            </div>
-            <div className={styles.footer}>
-                <Footer />
             </div>
         </div>
     )

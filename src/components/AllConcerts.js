@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-/* Custom Components */
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
-
 /* Styling*/
 import styles from '../Styling/AllConcerts.module.css';
 
@@ -55,9 +51,6 @@ const AllConcerts = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <Navbar />
-            </div>
             <div className={styles.body} >
                 {/* Sydney Opera House Concerts */}
                 {operaConcerts.length > 0 && 
@@ -128,7 +121,6 @@ const AllConcerts = () => {
                 </div>
                 }
             </div>
-            <Footer />
         </div>
     )
 }

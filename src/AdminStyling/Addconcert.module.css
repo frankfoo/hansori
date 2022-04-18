@@ -1,7 +1,7 @@
 .container {
     padding: 0px;
     background-color: black;
-    min-height: 100vh;
+    min-height: 86vh;
     width: 100%;
 
     display: flex;
@@ -11,12 +11,7 @@
     color: white;
 }
 
-.header {
-    min-height: 8vh;
-}
-
 .body {
-    min-height: 92vh;
 
     display: flex;
     flex-direction: column;

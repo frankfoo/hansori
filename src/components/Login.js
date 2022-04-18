@@ -4,10 +4,6 @@ import styles from '../Styling/Login.module.css';
 import { Form, Button, Alert } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* Custom Components */
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
-
 const URL = process.env.REACT_APP_URL;
 
 const Login = () => {
@@ -46,9 +42,6 @@ const Login = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-            <Navbar />
-            </div>
             <div className={styles.body}>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicUsername">
@@ -64,9 +57,6 @@ const Login = () => {
                     </Button>
                 </Form>
                 {alert.map((text) => <Alert severity="warning">{text}</Alert>)}
-            </div>
-            <div className={styles.footer}>
-                <Footer />
             </div>
         </div>
     )

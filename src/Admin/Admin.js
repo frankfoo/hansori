@@ -2,10 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import styles from '../AdminStyling/Admin.module.css';
 
-/* Custom Components */
-import Navbar from '../components/Navbar.js';
-import Footer from '../components/Footer.js';
-
 /* Bootstrap Components */
 import { Card, Button, Modal, Alert } from 'react-bootstrap';
 
@@ -91,9 +87,6 @@ const Admin = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <Navbar />
-            </div>
             <div className={styles.body}>
                 <h1>ADMIN PANEL</h1>
                 <h2>All Concerts</h2>
@@ -143,9 +136,6 @@ const Admin = () => {
                     </Button>
                     </Modal.Footer>
                 </Modal>
-            </div>
-            <div className={styles.footer}>
-                <Footer />
             </div>
         </div>
     )

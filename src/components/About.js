@@ -1,18 +1,11 @@
 import React from 'react';
 
-/* Custom Components */
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
-
 /* Styling*/
 import styles from '../Styling/About.module.css';
 
 const About = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <Navbar />
-            </div>
             <div className={styles.body}>
                 <div className={styles.upper}>
                     <p className={styles.firstName}>MICHELLE</p>
@@ -52,7 +45,6 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 };
