@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import * as React from 'react';
 import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
 
 /* Styling */
 import styles from './App.module.css';

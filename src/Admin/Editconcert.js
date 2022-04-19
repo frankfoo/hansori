@@ -256,6 +256,9 @@ const Editconcert = () => {
                         <Form.Label>Add concert images</Form.Label>
                         <Form.Control type="file" multiple onChange={(e) => setImages(e.target.files)}/>
                     </Form.Group>
+                    <Alert variant="info" className={styles.reminder}>
+                        <Alert.Heading>You need to reupload all photos sorry - you can set the order in windows/mac first</Alert.Heading>
+                    </Alert>
                     <Form.Group controlId="formFile" className="mb-3">
                         <Form.Label>Add concert poster</Form.Label>
                         <Form.Control type="file" onChange={(e) => setPoster(e.target.files)}/>
@@ -331,6 +334,9 @@ const Editconcert = () => {
                             )
                         }
                     })}
+                    <Alert variant="info" className={styles.reminder}>
+                        <Alert.Heading >The tag get's reset here so please choose the correct tag again</Alert.Heading>
+                    </Alert>
                     <div className={styles.buttonContainer}>
                         <Button variant="light" onClick={() => newItem('p')}>
                             Add new paragraph

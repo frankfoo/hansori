@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../Styling/Footer.module.css';
+import { Link } from "react-router-dom";
 
 import youtube from '../Icons/youtubeFooter.svg';
 import facebook from '../Icons/facebookFooter.svg';
@@ -19,7 +20,6 @@ const footer = () => {
                 <img src={facebook} onClick={() => openNewTab('https://www.facebook.com/hansorimusicsyd/')} />
                 <img src={instagram} onClick={() => openNewTab('https://www.instagram.com/hansorimusic/')} />
                 <img src={youtube} onClick={() => openNewTab('https://www.youtube.com/channel/UChj2_rvyVD38h-Y7XywSJ7w')} />
-
             </div>
         </div>
     );

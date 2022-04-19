@@ -17,6 +17,11 @@ const Admin = () => {
         }
     }, [])
 
+    const logout = () => {
+        localStorage.removeItem('loggedIn')
+        window.location.href = '/hansori/login';
+    }
+
     const [concerts, setConcerts] = React.useState([]);
     useEffect(() => {
         const options = {
@@ -64,7 +69,6 @@ const Admin = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
 
     const [show1, setShow1] = useState(false);
     const [alert, setAlert] = useState('');
@@ -119,8 +123,13 @@ const Admin = () => {
                         })
                     }
                 </div>
-                <div className={styles.buttons}>
-                    <Button variant="dark"><Link to={`/admin/add`} className={styles.navLink}>Add New Concert</Link></Button>
+                <div className={styles.btnContainer}>
+                    <div className={styles.buttons}>
+                        <Button variant="dark"><Link to={`/admin/add`} className={styles.navLink}>Add New Concert</Link></Button>
+                    </div>
+                    <div className={styles.buttons}>
+                        <Button variant="dark" className={styles.navLink1} onClick={() => logout()}>Logout</Button>
+                    </div>
                 </div>
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
