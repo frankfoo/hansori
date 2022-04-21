@@ -1,2 +1,3 @@
 # Hansori Website
-## Visit at frankfoo.github.io/hansori
+## [Visit at] (frankfoo.github.io/hansori)
+
