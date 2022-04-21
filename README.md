@@ -1,3 +1,2 @@
 # Hansori Website
-## [Visit at] (frankfoo.github.io/hansori)
-
+## Visit at: https://frankfoo.github.io/hansori/
