@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hansori/static/css/main.73cd7f7a.css",
-    "main.js": "/hansori/static/js/main.ea701142.js",
+    "main.css": "/hansori/static/css/main.a9cdf4ba.css",
+    "main.js": "/hansori/static/js/main.d101d7c8.js",
     "static/js/787.fe563e21.chunk.js": "/hansori/static/js/787.fe563e21.chunk.js",
     "static/media/banner1v4.jpg": "/hansori/static/media/banner1v4.92b3ba2b84060e0d62a2.jpg",
     "static/media/grid1.jpg": "/hansori/static/media/grid1.d8d916fc95647019bbc4.jpg",
@@ -29,12 +29,12 @@
     "index.html": "/hansori/index.html",
     "static/media/youtubeFooter.svg": "/hansori/static/media/youtubeFooter.9e6e68bec2c1f5e29b3b54dc02f54c47.svg",
     "static/media/facebookFooter.svg": "/hansori/static/media/facebookFooter.31ef16ddef4cbb4df5ced8dd63c26667.svg",
-    "main.73cd7f7a.css.map": "/hansori/static/css/main.73cd7f7a.css.map",
-    "main.ea701142.js.map": "/hansori/static/js/main.ea701142.js.map",
+    "main.a9cdf4ba.css.map": "/hansori/static/css/main.a9cdf4ba.css.map",
+    "main.d101d7c8.js.map": "/hansori/static/js/main.d101d7c8.js.map",
     "787.fe563e21.chunk.js.map": "/hansori/static/js/787.fe563e21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73cd7f7a.css",
-    "static/js/main.ea701142.js"
+    "static/css/main.a9cdf4ba.css",
+    "static/js/main.d101d7c8.js"
   ]
 }
